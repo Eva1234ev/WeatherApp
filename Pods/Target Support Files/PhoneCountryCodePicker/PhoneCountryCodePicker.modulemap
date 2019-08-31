@@ -1,0 +1,6 @@
+framework module PhoneCountryCodePicker {
+  umbrella header "PhoneCountryCodePicker-umbrella.h"
+
+  export *
+  module * { export * }
+}
