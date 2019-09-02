@@ -44,8 +44,19 @@
             }
             id idWind = [jsonObject objectForKey:@"wind"];
             if ([idWind isKindOfClass:[NSDictionary class]]) {
-                _wind_speed = [NSNumber numberWithDouble:[[idWind objectForKey:@"speed"] doubleValue]];
-                _wind_deg = [NSNumber numberWithDouble:[[idWind objectForKey:@"deg"] doubleValue]];
+                _speed = [NSNumber numberWithDouble:[[idWind objectForKey:@"speed"] doubleValue]];
+                _deg = [NSNumber numberWithDouble:[[idWind objectForKey:@"deg"] doubleValue]];
+            }
+            id idCloud = [jsonObject objectForKey:@"clouds"];
+            if ([idCloud  isKindOfClass:[NSDictionary class]]) {
+                _clouds= [NSNumber numberWithDouble:[[idCloud  objectForKey:@"speed"] doubleValue]];
+               
+            }
+
+            id idSys = [jsonObject objectForKey:@"sys"];
+            if ([idSys isKindOfClass:[NSDictionary class]]) {
+                _sunset = [idSys objectForKey:@"sunset"];
+                _sunrise = [idSys objectForKey:@"sunrise"];
             }
         } else {
             NSLog(@"Data is not a Dictionary");

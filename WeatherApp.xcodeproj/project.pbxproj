@@ -21,11 +21,12 @@
 		A6A7ABE4231911B600C96365 /* WeatherData.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A7ABE3231911B600C96365 /* WeatherData.m */; };
 		A6A7ABEC2319582100C96365 /* WeatherReuseView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A7ABEB2319582100C96365 /* WeatherReuseView.m */; };
 		A6A7ABEE2319585500C96365 /* WeatherReuseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6A7ABED2319585500C96365 /* WeatherReuseView.xib */; };
-		A6A7ABF223196CC700C96365 /* WeatherCountryListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A7ABF123196CC700C96365 /* WeatherCountryListTableViewController.m */; };
 		A6A7ABF72319A89900C96365 /* WeatherCountryListData.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A7ABF62319A89900C96365 /* WeatherCountryListData.m */; };
 		A6A7ABFE2319C11800C96365 /* JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A7ABFD2319C11800C96365 /* JSON.m */; };
 		A6A7AC012319C32A00C96365 /* WeatherCountryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A7AC002319C32A00C96365 /* WeatherCountryTableViewCell.m */; };
 		A6A7AC062319CCC600C96365 /* WeatherCountryAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A7AC052319CCC600C96365 /* WeatherCountryAPI.m */; };
+		A6A7AC51231BCA6400C96365 /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A7AC4F231BCA6400C96365 /* LoadingView.m */; };
+		A6A7AC54231BD94300C96365 /* CountriesWeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A7AC53231BD94300C96365 /* CountriesWeatherViewController.m */; };
 		D36FFA979CB217D96849D438 /* Pods_WeatherAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63A915999F05022BB9416652 /* Pods_WeatherAppTests.framework */; };
 		D8D4FEE7D5BAA9C5D952AB12 /* Pods_WeatherApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE68FA8D90F77072CABDA379 /* Pods_WeatherApp.framework */; };
 /* End PBXBuildFile section */
@@ -76,8 +77,6 @@
 		A6A7ABEA2319582100C96365 /* WeatherReuseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherReuseView.h; sourceTree = "<group>"; };
 		A6A7ABEB2319582100C96365 /* WeatherReuseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherReuseView.m; sourceTree = "<group>"; };
 		A6A7ABED2319585500C96365 /* WeatherReuseView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherReuseView.xib; sourceTree = "<group>"; };
-		A6A7ABF023196CC700C96365 /* WeatherCountryListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherCountryListTableViewController.h; sourceTree = "<group>"; };
-		A6A7ABF123196CC700C96365 /* WeatherCountryListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherCountryListTableViewController.m; sourceTree = "<group>"; };
 		A6A7ABF52319A89900C96365 /* WeatherCountryListData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherCountryListData.h; sourceTree = "<group>"; };
 		A6A7ABF62319A89900C96365 /* WeatherCountryListData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherCountryListData.m; sourceTree = "<group>"; };
 		A6A7ABFC2319C11800C96365 /* JSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
@@ -86,6 +85,10 @@
 		A6A7AC002319C32A00C96365 /* WeatherCountryTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherCountryTableViewCell.m; sourceTree = "<group>"; };
 		A6A7AC042319CCC600C96365 /* WeatherCountryAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherCountryAPI.h; sourceTree = "<group>"; };
 		A6A7AC052319CCC600C96365 /* WeatherCountryAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherCountryAPI.m; sourceTree = "<group>"; };
+		A6A7AC4F231BCA6400C96365 /* LoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingView.m; sourceTree = "<group>"; };
+		A6A7AC50231BCA6400C96365 /* LoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingView.h; sourceTree = "<group>"; };
+		A6A7AC52231BD94300C96365 /* CountriesWeatherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountriesWeatherViewController.h; sourceTree = "<group>"; };
+		A6A7AC53231BD94300C96365 /* CountriesWeatherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountriesWeatherViewController.m; sourceTree = "<group>"; };
 		A88F642E5941BD453AA2F895 /* Pods-WeatherAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-WeatherAppUITests/Pods-WeatherAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C4624C71C6F0F8F326E329A3 /* Pods-WeatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp.release.xcconfig"; path = "Target Support Files/Pods-WeatherApp/Pods-WeatherApp.release.xcconfig"; sourceTree = "<group>"; };
 		EEEA9164B217B25E8DB94BC4 /* Pods-WeatherAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherAppTests.release.xcconfig"; path = "Target Support Files/Pods-WeatherAppTests/Pods-WeatherAppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -146,6 +149,8 @@
 		A6A7ABA623190E1600C96365 /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				A6A7AC4E231B244900C96365 /* Network */,
+				A6A7AC4A231B223200C96365 /* Additions */,
 				A6A7ABF82319A8FE00C96365 /* WeatherDatasStore */,
 				A6A7AC032319CC3F00C96365 /* Controller */,
 				A6A7ABEF2319587D00C96365 /* WeatherReuse */,
@@ -154,10 +159,6 @@
 				A6A7ABA823190E1600C96365 /* AppDelegate.m */,
 				A6A7ABF32319788300C96365 /* Resources */,
 				A6A7ABB823190E1700C96365 /* Info.plist */,
-				A6A7ABDF2319116900C96365 /* OpenWeatherMapAPI.h */,
-				A6A7ABE02319116900C96365 /* OpenWeatherMapAPI.m */,
-				A6A7AC042319CCC600C96365 /* WeatherCountryAPI.h */,
-				A6A7AC052319CCC600C96365 /* WeatherCountryAPI.m */,
 			);
 			path = WeatherApp;
 			sourceTree = "<group>";
@@ -227,12 +228,32 @@
 		A6A7AC032319CC3F00C96365 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				A6A7ABF023196CC700C96365 /* WeatherCountryListTableViewController.h */,
-				A6A7ABF123196CC700C96365 /* WeatherCountryListTableViewController.m */,
 				A6A7ABDC2319111400C96365 /* CurrentWeatherViewController.h */,
 				A6A7ABDD2319111400C96365 /* CurrentWeatherViewController.m */,
+				A6A7AC52231BD94300C96365 /* CountriesWeatherViewController.h */,
+				A6A7AC53231BD94300C96365 /* CountriesWeatherViewController.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		A6A7AC4A231B223200C96365 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				A6A7AC50231BCA6400C96365 /* LoadingView.h */,
+				A6A7AC4F231BCA6400C96365 /* LoadingView.m */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		A6A7AC4E231B244900C96365 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A6A7ABDF2319116900C96365 /* OpenWeatherMapAPI.h */,
+				A6A7ABE02319116900C96365 /* OpenWeatherMapAPI.m */,
+				A6A7AC042319CCC600C96365 /* WeatherCountryAPI.h */,
+				A6A7AC052319CCC600C96365 /* WeatherCountryAPI.m */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		B681D507CEC12FD4D7B11476 /* Frameworks */ = {
@@ -500,12 +521,13 @@
 				A6A7ABE12319116900C96365 /* OpenWeatherMapAPI.m in Sources */,
 				A6A7ABB223190E1600C96365 /* WeatherApp.xcdatamodeld in Sources */,
 				A6A7ABDE2319111400C96365 /* CurrentWeatherViewController.m in Sources */,
-				A6A7ABF223196CC700C96365 /* WeatherCountryListTableViewController.m in Sources */,
+				A6A7AC54231BD94300C96365 /* CountriesWeatherViewController.m in Sources */,
 				A6A7ABF72319A89900C96365 /* WeatherCountryListData.m in Sources */,
 				A6A7ABFE2319C11800C96365 /* JSON.m in Sources */,
 				A6A7ABEC2319582100C96365 /* WeatherReuseView.m in Sources */,
 				A6A7ABBA23190E1700C96365 /* main.m in Sources */,
 				A6A7AC062319CCC600C96365 /* WeatherCountryAPI.m in Sources */,
+				A6A7AC51231BCA6400C96365 /* LoadingView.m in Sources */,
 				A6A7ABE4231911B600C96365 /* WeatherData.m in Sources */,
 				A6A7AC012319C32A00C96365 /* WeatherCountryTableViewCell.m in Sources */,
 				A6A7ABA923190E1600C96365 /* AppDelegate.m in Sources */,

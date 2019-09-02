@@ -7,13 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "WeatherCountryListData.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface WeatherCountryTableViewCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UILabel *countryLabel;
-@property (weak, nonatomic) IBOutlet UIImageView *countryFlagImageView;
 
+-(void)weatherCountry: (WeatherCountryListData*) weatherCountry;
 @end
 
 NS_ASSUME_NONNULL_END

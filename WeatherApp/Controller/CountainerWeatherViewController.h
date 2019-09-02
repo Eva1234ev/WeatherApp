@@ -1,8 +1,8 @@
 //
-//  WeatherReuseView.h
+//  CountainerWeatherViewController.h
 //  WeatherApp
 //
-//  Created by Eva on 30.08.2019.
+//  Created by Eva on 01.09.2019.
 //  Copyright © 2019 Eva. All rights reserved.
 //
 
@@ -10,11 +10,8 @@
 @class WeatherData;
 NS_ASSUME_NONNULL_BEGIN
 
-@interface WeatherReuseView : UIView
-
+@interface CountainerWeatherViewController : UIViewController
 @property (strong, nonatomic) WeatherData * weatherData;
-
--(void)configure;
 @end
 
 NS_ASSUME_NONNULL_END

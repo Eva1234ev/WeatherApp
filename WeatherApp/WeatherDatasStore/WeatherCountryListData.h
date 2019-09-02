@@ -8,17 +8,10 @@
 #import <Foundation/Foundation.h>
 #import <JSONModel/JSONModel.h>
 NS_ASSUME_NONNULL_BEGIN
-@class WeatherCountry;
-@protocol WeatherCountry;
-
-@interface WeatherCountry : JSONModel
-@property (strong, nonatomic) NSString *country_name;
-@property (strong, nonatomic) NSString *country_id;
-@end
 
 @interface WeatherCountryListData : JSONModel
-@property (strong, nonatomic)  WeatherCountry *country;
+@property (strong, nonatomic) NSString *name;
+@property (strong, nonatomic) NSString *code;
 
 @end
-
 NS_ASSUME_NONNULL_END

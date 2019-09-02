@@ -11,18 +11,21 @@
 #import "WeatherReuseView.h"
 #import <CoreLocation/CoreLocation.h>
 
+
 #define kUpdateInterval 3600
 @interface CurrentWeatherViewController ()<CLLocationManagerDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *degreesLabel;
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @property (strong, nonatomic) NSDate *lastUpdate;
-
+@property (weak, nonatomic) IBOutlet UIView *containerCurrentWeatherView;
+@property (strong, nonatomic) WeatherData *weatherData;
 @end
 
 @implementation CurrentWeatherViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.containerCurrentWeatherView.hidden=YES;
     self.locationManager = [[CLLocationManager alloc] init];
     [self enableLocationServices];
 }
@@ -57,48 +60,27 @@
 #pragma mark - CLLocationManagerDelegate Methods
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations {
-    NSLocale *currentLocale = [NSLocale currentLocale];  // get the current locale.
-    NSString *countryCode = [currentLocale objectForKey:NSLocaleCountryCode];
-    //NSString *cityCode = [currentLocale objectForKey:NSLocal];
-    // If it's a relatively recent event, turn off updates to save power.
-    CLLocation* location = [locations lastObject];
-    NSDate* eventDate = location.timestamp;
-    NSTimeInterval howRecent = [eventDate timeIntervalSinceNow];
-   // if (abs(howRecent) < 15.0) {
-        // If the event is recent, do something with it.
-        NSLog(@"latitude %+.6f, longitude %+.6f\n",
-              location.coordinate.latitude,
-              location.coordinate.longitude);
-  //  }
     if ([[NSDate date] timeIntervalSinceDate:self.lastUpdate] > kUpdateInterval || !self.lastUpdate) {
-        
         [[OpenWeatherMapAPI sharedInstance]
          fetchCurrentWeatherDataForLocation:[locations lastObject]
          completion:^(WeatherData *weatherData) {
-             
-             NSString *currentCountryString = [weatherData currentCountryString];
-             
              dispatch_async(dispatch_get_main_queue(), ^{
-                 NSArray *arrayOfViews = [[NSBundle mainBundle] loadNibNamed:@"WeatherReuseView"
-                                                                       owner:self
-                                                                     options:nil];
                  
-                 WeatherReuseView* sView = arrayOfViews[0];
+                 WeatherReuseView* sView = [[NSBundle mainBundle] loadNibNamed:@"WeatherReuseView" owner:self options:nil].firstObject;
                  sView.frame = UIScreen.mainScreen.bounds;
                  sView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.05f];
                  sView.weatherData = weatherData;
                  [self.view addSubview:sView];
                  [sView configure];
-                 
-                 
-               //  self.degreesLabel.text = tempString;
                  self.lastUpdate = [NSDate date];
+    
+                 
              });
          }
          failure:^(NSError *error) {
              NSLog(@"Failed: %@",error);
          }
-         ];
+        ];
     }
     
 
@@ -122,8 +104,6 @@
             break;
     }
 }
-
-
 
 
 

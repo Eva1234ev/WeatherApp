@@ -1,17 +1,19 @@
 //
-//  WeatherReuseView.m
+//  CountainerWeatherViewController.m
 //  WeatherApp
 //
-//  Created by Eva on 30.08.2019.
+//  Created by Eva on 01.09.2019.
 //  Copyright © 2019 Eva. All rights reserved.
 //
 
-#import "WeatherReuseView.h"
+#import "CountainerWeatherViewController.h"
 #import "AppDelegate.h"
 #import "WeatherData.h"
 #import <SDWebImage/SDWebImage.h>
+#import "CurrentWeatherDelegate.h"
+#import "CurrentWeatherViewController.h"
 
-@interface WeatherReuseView()
+@interface CountainerWeatherViewController ()<CurrentWeatherDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *closeButton;
 @property (weak, nonatomic) IBOutlet UILabel *countryLabel;
 @property (weak, nonatomic) IBOutlet UILabel *tempreatureLabel;
@@ -22,48 +24,45 @@
 @property (weak, nonatomic) IBOutlet UILabel *humidityLabel;
 @property (weak, nonatomic) IBOutlet UILabel *pressureLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *weatherImageView;
+
 @end
 
+@implementation CountainerWeatherViewController
 
-@implementation WeatherReuseView
+- (void)viewDidLoad {
+    
+    [super viewDidLoad];
+    CurrentWeatherViewController *currentDelegate = [[CurrentWeatherViewController alloc]init];
+    currentDelegate.delegate = self;
+//    
+    if(self.weatherData){
+       [self configure];
+    }
 
+}
 
 - (IBAction)closeButtinAction:(id)sender {
-   [self removeFromSuperview];
+    
     
 }
- 
+
+
 -(void)configure {
-    self.weatherImageView.layer.cornerRadius = self.weatherImageView.frame.size.width/2;
-    self.weatherImageView.layer.masksToBounds = YES;
-    if ([self.superview respondsToSelector:@selector(resetDrawType:)]){
-        
-        
-    }
+
     self.countryLabel.text = self.weatherData.name;
     double tmin = [self convertFahrenheitToCelsis:self.weatherData.temp_min];
     double tmax = [self convertFahrenheitToCelsis:self.weatherData.temp_max];
-    NSString *temp = [ NSString stringWithFormat:@"%d° - %d°", (int)tmax,(int)tmin];
-    if(tmin < 0){
-        temp = [ NSString stringWithFormat:@"%d°,%d°", (int)tmax,(int)tmin];
-    }
-    self.tempreatureLabel.text = temp;
+    self.tempreatureLabel.text = [ NSString stringWithFormat:@"%d° - %d°", (int)tmax,(int)tmin];
     self.descriptionLabel.text = self.weatherData.desc;
     self.cloudsLabel.text = [@"Cloud - " stringByAppendingString:[[self.weatherData.clouds stringValue] stringByAppendingString:@" %"]];
-    
-    NSNumberFormatter *decimalStyleFormatter = [[NSNumberFormatter alloc] init];
-    [decimalStyleFormatter setMaximumFractionDigits:2];
-    NSString *resultStringSpeed = [decimalStyleFormatter stringFromNumber:self.weatherData.speed];
-    self.windSpeedLabel.text = [@"Wind Speed - " stringByAppendingString:resultStringSpeed];
-    
-    self.windDirection.text = [[@"Wind Direction - "stringByAppendingString:[self.weatherData.deg stringValue]]stringByAppendingString:@" km/h"];
-    self.humidityLabel.text =[[ @"Humidity - " stringByAppendingString:[self.weatherData.humidity stringValue]] stringByAppendingString:@" %"];
+    self.windSpeedLabel.text = [@"Wind Speed - " stringByAppendingString:[self.weatherData.speed stringValue]];
+    self.windDirection.text = [@"Wind Direction - "stringByAppendingString:[self.weatherData.deg stringValue]];
+    self.humidityLabel.text =[ @"Humidity - " stringByAppendingString:[self.weatherData.humidity stringValue]];
     self.pressureLabel.text = [@"Pressure (Atmsp.) - " stringByAppendingString:[self.weatherData.pressure stringValue]];
     NSString *urlImage = [[@"https://openweathermap.org/img/w/" stringByAppendingString:self.weatherData.icon] stringByAppendingString:@".png"];
-
     [self.weatherImageView sd_setImageWithURL:[NSURL URLWithString:urlImage]
-                                placeholderImage:[UIImage imageNamed:@"placeholder.png"]];
-
+                             placeholderImage:[UIImage imageNamed:@"placeholder.png"]];
+    
     
 }
 
@@ -74,7 +73,23 @@
 }
 
 
+- (IBAction)addButtonAction:(UIButton *)sender {
+    
+    
+}
+- (IBAction)alertHide:(UIButton *)sender {
+}
+- (IBAction)cancelButtonAction:(UIButton *)sender {
+    
+}
 
+
+
+- (void)getWeatherData:(WeatherData *)weatherData {
+   // self.weatherData=weatherData;
+    //[self configure];
+    
+}
 
 
 @end

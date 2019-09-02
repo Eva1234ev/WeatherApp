@@ -24,10 +24,6 @@
     float latitude = location.coordinate.latitude;
     float longitude = location.coordinate.longitude;
     
-
-    //  NSString *urlString = [NSString stringWithFormat:@"http://api.openweathermap.org/data/2.5/weather?lat=%f&lon=%f&units=imperial&appid=%s",latitude,longitude,kOpenWeatherMapAPIKey];
-    //a28594d3377e9f55a918b16a30100b16
-    
     NSString *urlString = [NSString stringWithFormat:@"http://api.openweathermap.org/data/2.5/weather?lat=%f&lon=%f&units=imperial&appid=a28594d3377e9f55a918b16a30100b16",latitude,longitude];
     NSURLSession *session = [NSURLSession sharedSession];
     NSURL *url = [NSURL URLWithString:urlString];

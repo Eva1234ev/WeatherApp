@@ -18,26 +18,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="earthLaunch" translatesAutoresizingMaskIntoConstraints="NO" id="BHk-lm-GAN">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cirleEarth" translatesAutoresizingMaskIntoConstraints="NO" id="Nyb-Hu-AMm">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lpd-El-2Eb">
+                                <rect key="frame" x="0.0" y="62" width="375" height="83"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="BHk-lm-GAN" secondAttribute="bottom" id="5mp-0s-H5c"/>
-                            <constraint firstItem="BHk-lm-GAN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Hjq-l3-xlj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BHk-lm-GAN" secondAttribute="trailing" id="Nd6-ML-OCf"/>
-                            <constraint firstItem="BHk-lm-GAN" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="eFw-EU-CtW"/>
+                            <constraint firstItem="Lpd-El-2Eb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="42" id="1Zg-QM-0gA"/>
+                            <constraint firstItem="Nyb-Hu-AMm" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="7I3-EG-BGJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nyb-Hu-AMm" secondAttribute="trailing" id="A5T-X6-fpo"/>
+                            <constraint firstItem="Nyb-Hu-AMm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Dgm-N2-an7"/>
+                            <constraint firstItem="Lpd-El-2Eb" firstAttribute="width" secondItem="Nyb-Hu-AMm" secondAttribute="width" id="HZL-Ky-pYq"/>
+                            <constraint firstItem="Lpd-El-2Eb" firstAttribute="centerX" secondItem="Nyb-Hu-AMm" secondAttribute="centerX" id="Tc4-0L-Zg8"/>
+                            <constraint firstAttribute="bottom" secondItem="Nyb-Hu-AMm" secondAttribute="bottom" id="mkC-SH-XL5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Lpd-El-2Eb" secondAttribute="bottom" constant="522" id="zqe-pV-geo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
     <resources>
-        <image name="earthLaunch" width="1242" height="2688"/>
+        <image name="cirleEarth" width="1080" height="1920"/>
     </resources>
 </document>
