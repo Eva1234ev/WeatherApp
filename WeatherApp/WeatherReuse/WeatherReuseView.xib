@@ -30,7 +30,7 @@
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKe-OW-dM9">
-                    <rect key="frame" x="276" y="188" width="96" height="55"/>
+                    <rect key="frame" x="276" y="188" width="96" height="79"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="96" id="3fz-R3-7b1"/>
                     </constraints>
@@ -133,7 +133,7 @@
                 <constraint firstItem="KSe-ZL-Yc7" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailingMargin" id="rhk-Vd-4NW"/>
                 <constraint firstAttribute="trailing" secondItem="p3f-C9-9QR" secondAttribute="trailing" constant="-1" id="rvL-lL-n5T"/>
                 <constraint firstItem="cQ6-N1-oGU" firstAttribute="trailing" secondItem="E7Y-Ap-gk5" secondAttribute="trailing" id="trI-qE-Jcu"/>
-                <constraint firstItem="p3f-C9-9QR" firstAttribute="top" secondItem="hKe-OW-dM9" secondAttribute="bottom" constant="4" id="vCW-lu-zNX"/>
+                <constraint firstItem="p3f-C9-9QR" firstAttribute="top" secondItem="hKe-OW-dM9" secondAttribute="bottom" constant="-20" id="vCW-lu-zNX"/>
                 <constraint firstItem="E7Y-Ap-gk5" firstAttribute="trailing" secondItem="ici-cr-Qxf" secondAttribute="trailing" id="zoM-dB-ZnI"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>

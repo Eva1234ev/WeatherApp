@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (strong, nonatomic) WeatherData * weatherData;
 
 -(void)configure;
+@property (nonatomic,assign) BOOL weatherCurrentOrCountry;
 @end
 
 NS_ASSUME_NONNULL_END

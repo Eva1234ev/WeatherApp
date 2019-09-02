@@ -313,22 +313,6 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "WeatherApp/WeatherReuse/WeatherReuseView.m"
-            timestampString = "589049317.131294"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "-configure"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "WeatherApp/Controller/WeatherCountryListTableViewController.m"
             timestampString = "588999061.666675"
             startingColumnNumber = "9223372036854775807"
@@ -474,11 +458,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WeatherApp/Controller/CurrentWeatherViewController.m"
-            timestampString = "589049317.1330709"
+            timestampString = "589141386.554939"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
             landmarkName = "-locationManager:didUpdateLocations:"
             landmarkType = "7">
          </BreakpointContent>
@@ -489,24 +473,8 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "WeatherApp/WeatherReuse/WeatherReuseView.m"
-            timestampString = "589049317.135308"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "-configure"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "WeatherApp/Controller/CountriesWeatherViewController.m"
-            timestampString = "589049317.1354001"
+            timestampString = "589141386.555041"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "72"
@@ -522,7 +490,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WeatherApp/Controller/CountriesWeatherViewController.m"
-            timestampString = "589049317.1354721"
+            timestampString = "589141386.555498"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "83"
@@ -585,7 +553,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WeatherApp/Controller/CountriesWeatherViewController.m"
-            timestampString = "589049317.135542"
+            timestampString = "589141386.555811"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "94"
@@ -601,7 +569,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WeatherApp/Controller/CountriesWeatherViewController.m"
-            timestampString = "589049317.135608"
+            timestampString = "589141386.556228"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "93"
@@ -613,15 +581,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WeatherApp/WeatherReuse/WeatherReuseView.m"
-            timestampString = "589049317.135675"
+            timestampString = "589141386.557785"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "-configure"
             landmarkType = "7">
          </BreakpointContent>

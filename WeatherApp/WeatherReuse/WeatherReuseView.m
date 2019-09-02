@@ -36,9 +36,14 @@
 -(void)configure {
     self.weatherImageView.layer.cornerRadius = self.weatherImageView.frame.size.width/2;
     self.weatherImageView.layer.masksToBounds = YES;
-    if ([self.superview respondsToSelector:@selector(resetDrawType:)]){
-        
-        
+  
+    if (self.weatherCurrentOrCountry)
+       
+    {
+        self.closeButton.hidden = YES;
+    }
+    else{
+         self.closeButton.hidden = NO;
     }
     self.countryLabel.text = self.weatherData.name;
     double tmin = [self convertFahrenheitToCelsis:self.weatherData.temp_min];

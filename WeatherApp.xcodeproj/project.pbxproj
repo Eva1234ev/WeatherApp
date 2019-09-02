@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9E8382D2C72D870A0DC43256 /* Pods_WeatherAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 649746D5E083AD26510BCC71 /* Pods_WeatherAppUITests.framework */; };
+		A60ECC17231D7F27004DDDB2 /* AnimatedGIFImageSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = A60ECC16231D7F27004DDDB2 /* AnimatedGIFImageSerialization.m */; };
 		A6A7ABA923190E1600C96365 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A7ABA823190E1600C96365 /* AppDelegate.m */; };
 		A6A7ABAF23190E1600C96365 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6A7ABAD23190E1600C96365 /* Main.storyboard */; };
 		A6A7ABB223190E1600C96365 /* WeatherApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A6A7ABB023190E1600C96365 /* WeatherApp.xcdatamodeld */; };
@@ -53,6 +54,8 @@
 		649746D5E083AD26510BCC71 /* Pods_WeatherAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72CB46CEBC5242FD88CB624E /* Pods-WeatherAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherAppTests.debug.xcconfig"; path = "Target Support Files/Pods-WeatherAppTests/Pods-WeatherAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		79355D47EABCB70B4CD09CAF /* Pods-WeatherAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherAppUITests.release.xcconfig"; path = "Target Support Files/Pods-WeatherAppUITests/Pods-WeatherAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A60ECC15231D7F27004DDDB2 /* AnimatedGIFImageSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedGIFImageSerialization.h; sourceTree = "<group>"; };
+		A60ECC16231D7F27004DDDB2 /* AnimatedGIFImageSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatedGIFImageSerialization.m; sourceTree = "<group>"; };
 		A6A7ABA423190E1600C96365 /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6A7ABA723190E1600C96365 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A6A7ABA823190E1600C96365 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -124,6 +127,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A60ECC14231D7F27004DDDB2 /* AnimatedGIFImageSerialization */ = {
+			isa = PBXGroup;
+			children = (
+				A60ECC15231D7F27004DDDB2 /* AnimatedGIFImageSerialization.h */,
+				A60ECC16231D7F27004DDDB2 /* AnimatedGIFImageSerialization.m */,
+			);
+			path = AnimatedGIFImageSerialization;
+			sourceTree = "<group>";
+		};
 		A6A7AB9B23190E1600C96365 = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +251,7 @@
 		A6A7AC4A231B223200C96365 /* Additions */ = {
 			isa = PBXGroup;
 			children = (
+				A60ECC14231D7F27004DDDB2 /* AnimatedGIFImageSerialization */,
 				A6A7AC50231BCA6400C96365 /* LoadingView.h */,
 				A6A7AC4F231BCA6400C96365 /* LoadingView.m */,
 			);
@@ -524,6 +537,7 @@
 				A6A7AC54231BD94300C96365 /* CountriesWeatherViewController.m in Sources */,
 				A6A7ABF72319A89900C96365 /* WeatherCountryListData.m in Sources */,
 				A6A7ABFE2319C11800C96365 /* JSON.m in Sources */,
+				A60ECC17231D7F27004DDDB2 /* AnimatedGIFImageSerialization.m in Sources */,
 				A6A7ABEC2319582100C96365 /* WeatherReuseView.m in Sources */,
 				A6A7ABBA23190E1700C96365 /* main.m in Sources */,
 				A6A7AC062319CCC600C96365 /* WeatherCountryAPI.m in Sources */,

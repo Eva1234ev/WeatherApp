@@ -10,6 +10,7 @@
 #import "OpenWeatherMapAPI.h"
 #import "WeatherReuseView.h"
 #import <CoreLocation/CoreLocation.h>
+#import "AnimatedGIFImageSerialization.h"
 
 
 #define kUpdateInterval 3600
@@ -18,6 +19,7 @@
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @property (strong, nonatomic) NSDate *lastUpdate;
 @property (weak, nonatomic) IBOutlet UIView *containerCurrentWeatherView;
+@property (weak, nonatomic) IBOutlet UIImageView *gifImageView;
 @property (strong, nonatomic) WeatherData *weatherData;
 @end
 
@@ -28,6 +30,15 @@
     self.containerCurrentWeatherView.hidden=YES;
     self.locationManager = [[CLLocationManager alloc] init];
     [self enableLocationServices];
+}
+
+-(void)addGif{
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
+    imageView.contentMode = UIViewContentModeScaleAspectFill;
+    imageView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    imageView.image = [UIImage imageNamed:@"weathergif.gif"];
+    [self.view addSubview:imageView];
+
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -68,6 +79,7 @@
                  
                  WeatherReuseView* sView = [[NSBundle mainBundle] loadNibNamed:@"WeatherReuseView" owner:self options:nil].firstObject;
                  sView.frame = UIScreen.mainScreen.bounds;
+                 sView.weatherCurrentOrCountry=YES;
                  sView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.05f];
                  sView.weatherData = weatherData;
                  [self.view addSubview:sView];

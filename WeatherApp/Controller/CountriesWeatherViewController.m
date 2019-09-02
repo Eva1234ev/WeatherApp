@@ -92,7 +92,8 @@
                  dispatch_async(dispatch_get_main_queue(), ^{
                      
                     WeatherReuseView* sView = [[NSBundle mainBundle] loadNibNamed:@"WeatherReuseView" owner:self options:nil].firstObject;
-                     sView.frame = UIScreen.mainScreen.bounds;   
+                     sView.frame = UIScreen.mainScreen.bounds;
+                     sView.weatherCurrentOrCountry=NO;
                      sView.weatherData = weatherData;
                      [self.view addSubview:sView];
                      [sView configure];
